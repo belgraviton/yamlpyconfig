@@ -1,5 +1,5 @@
 # yamlpyconfig
-Library for parsing yaml config files in ML training pipelines. Based on [Artur Kuzin talk "DL Pipelines tips & tricks"](https://www.youtube.com/watch?v=W5GFH1erQ4U).
+Library for parsing yaml config files in ML training pipelines. Based on [Artur Kuzin talk "DL Pipelines tips & tricks"](https://youtu.be/W5GFH1erQ4U?t=322).
 
 #### Benefits:
 1. Config files have yaml format.
