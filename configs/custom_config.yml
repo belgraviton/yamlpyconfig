@@ -1,0 +1,32 @@
+random_seed : 24
+project: 'ML_pipeline'
+
+ds_name: imagenet
+log_name: 00_custom_train
+
+gpu: '0'
+batch_size: 128
+epochs: 15
+num_workers: 8
+  
+aug_input_size: 256
+aug_crop_size: 224
+aug_bright: 0.4
+aug_hue: 0.4
+aug_sat: 0.4
+
+model_name: resnet
+model_pretrained: True
+model_pool: avg
+model_head: linear
+model_do: 0.5
+
+opt_name: SGD
+lr: 0.1
+momentum: 0.0
+  
+sched_name: cos # cos (CosineAnnealingWarmRestarts) and plt (ReduceLROnPlateau)
+sched_eta_min: 0.00000001 # for CosineAnnealingWarmRestarts
+sched_patience: 3 # for ReduceLROnPlateau
+
+
